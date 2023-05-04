@@ -1,0 +1,228 @@
+img {
+    width: 25px;
+}
+
+.headerPontuacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 60px;
+}
+
+.headerPontuacao_opcoesMenu {
+    display: flex;
+}
+
+.headerPontuacao_logo img, .headerPontuacao_usuario img {
+    width: 40px;
+}
+
+.headerPontuacao_opcoesMenu_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.headerPontuacao_opcoesMenu_div p {
+    font-size: 0.7rem;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+#pontuacao p {
+    color: #98FFAE;
+}
+
+.heading {
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 25px 0;
+}
+/* CONTAINER */
+
+.containerDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 60px 10px;
+}
+
+/* Ranking */
+
+.titleRanking {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: -40px;
+    color: #ffffff;
+    background-color: #26C076;
+    border-radius: 12px;
+    width: 140px;
+    margin-left: 45px;
+    padding: 7px;
+}
+
+.containerRanking {
+    background-color: #98FFAE;
+    color: #1E774C;
+    padding: 20px 25px 5px;
+    width: 20%;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -8px;
+}
+
+.positionRanking {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: #1e774c44 solid 1px ;
+}
+
+.iconRanking {
+    width: 30px;
+    margin-right: 8px;
+}
+
+.medalRanking {
+    width: 20px;
+}
+
+.nameRanking {
+    text-align: left;
+    font-weight: 600;
+    width: 60%;
+}
+
+.nameRanking h2 {
+    font-size: 0.8rem;
+}
+
+.nameRanking p {
+    font-size: 0.7rem;
+    margin-top: 5px;
+}
+
+#positionUser {
+    font-weight: 800;
+}
+
+#ultimaPosition {
+    border: none;
+}
+
+
+/* PONTOS */
+
+.containerPontos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: flex-start;
+    /* margin-left: 80px; */
+    width: 70%;
+}
+
+.titlePontos {
+    font-size: 1.6rem;
+    color: #1E774C;
+    background-color: #98FFAE;
+    text-align: center;
+    border-radius: 15px;
+    font-weight: 600;
+    margin: 0 320px;
+    width: 30%;
+    padding: 8px 5px;
+    margin-bottom: 10px;
+    margin-top: -15px;
+}
+
+
+.historicoPontos {
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.linhaPontos {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.09rem;
+    font-weight: 500;
+    padding: 12px 0;
+    border-bottom: #98ffae52 solid 2px;
+}
+
+.linhaLeft img {
+    width: 30px;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+
+.linhaLeft {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.linhaRight {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.linhaRight img {
+    width: 15px;
+    margin: 0 10px;
+}
+
+.linhaRight img:hover {
+    cursor: pointer;
+}
+
+.acao {
+    margin-right: 100px;
+    margin-top: 10px;
+}
+
+.acao:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.pontos {
+    margin-right: 30px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1E774C;
+    background-color: #98FFAE;
+    border-radius: 10px;
+    padding: 8px 10px;
+}
+
+#ultimaLinha {
+    border: none;
+}
+
+.quantPontos h2 {
+    color: #ffffff;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+#meusPontos {
+    color: #1E774C;
+    background-color: #98FFAE;
+    border-radius: 10px;
+    padding: 2px 8px;
+    font-weight: 700;
+}
+

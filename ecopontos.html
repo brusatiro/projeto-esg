@@ -1,0 +1,91 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lemon | Ecopontos</title>
+    <link rel="icon" href="./assets/img/menu/logo-small.png">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/map.css">
+    <!-- Script only -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="./assets/js/index.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2If7mPNvifcfrToaPs9maQ0XR9mEVfY8&callback=initMap&v=weekly"
+        defer></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <!-- HEADER -->
+    <header class="headerAcoes">
+        <a class="headerAcoes_logo" href="./acoes.html"><img src="./assets/img/menu/logo-small.png"
+                alt="Logo Lemon"></a>
+        <div class="headerAcoes_opcoesMenu">
+            <a href="./acoes.html">
+                <div class="headerAcoes_opcoesMenu_div" id="acoes">
+                    <img src="./assets/img/menu/iconInicioWhite.svg" alt="">
+                    <p>Ações</p>
+                </div>
+            </a>
+            <a href="./pontuacao.html">
+                <div class="headerAcoes_opcoesMenu_div" id="pontuacao">
+                    <img src="./assets/img/menu/iconPontuacao.svg" alt="">
+                    <p>Pontuação</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="headerAcoes_opcoesMenu_div" id="premios">
+                    <img src="./assets/img/menu/iconPremios.svg" alt="">
+                    <p>Prêmios</p>
+                </div>
+            </a>
+            <a href="./dicas.html">
+                <div class="headerAcoes_opcoesMenu_div" id="dicas">
+                    <img src="./assets/img/menu/iconDicasGreen.svg" alt="">
+                    <p>Dicas</p>
+                </div>
+            </a>
+        </div>
+        <a class="headerAcoes_usuario" href="./login.html"><img src="./assets/img/menu/iconUser.svg" alt=""></a>
+    </header>
+
+    <!-- HEADING -->
+    <div class="heading">
+        <p>Ecopontos perto de você:</p>
+    </div>
+    
+    <!--The div element for the map -->
+    <div id="map"></div>
+
+    <div class="backButton">
+        <a href="./dicas.html">
+            <img src="./assets/img/icons/iconArrow.svg" alt="Botão de Voltar">
+        </a>
+    </div>
+
+    <!-- CHATBOT -->
+    <script>
+        window.addEventListener('mouseover', initLandbot, { once: true });
+        window.addEventListener('touchstart', initLandbot, { once: true });
+        var myLandbot;
+        function initLandbot() {
+            if (!myLandbot) {
+                var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+                s.addEventListener('load', function () {
+                    var myLandbot = new Landbot.Livechat({
+                        configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-1571288-MLVQNTWK283EAQWH/index.json',
+                    });
+                });
+                s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
+                var x = document.getElementsByTagName('script')[0];
+                x.parentNode.insertBefore(s, x);
+            }
+        }
+    </script>
+</body>
+
+</html>

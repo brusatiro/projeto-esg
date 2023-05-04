@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lemon | Login</title>
+    <link rel="icon" href="./assets/img/menu/logo-small.png">
+    <script src="https://kit.fontawesome.com/67568c9f06.js" crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/login.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="headerHome">
+        <a href="./index.html">
+            <img class="headerHome_logo" src="./assets/img/logo/logoVerde.svg" alt="Logo do Lemon">
+        </a>
+    </header>
+
+    <!-- CONTAINER LOGIN -->
+    <div class="containerLogin">
+        <div class="containerLogin_inputEmail">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" id="email" placeholder="E-mail" required>
+        </div>
+        <div class="containerLogin_inputSenha">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" id="senha" placeholder="Senha" required>
+        </div>
+        <a class="containerLogin_btnLogin" href="./acoes.html">
+            <button>Login</button>
+        </a>
+        <a class="containerLogin_linkCadastro" href="./cadastro.html">Não tem uma conta? Faça o cadastro</a>
+        <a class="containerLogin_linkCadastro" href="">Esqueci minha senha</a>
+    </div>
+
+        <!-- CHATBOT -->
+
+    <script>
+        window.addEventListener('mouseover', initLandbot, { once: true });
+        window.addEventListener('touchstart', initLandbot, { once: true });
+        var myLandbot;
+        function initLandbot() {
+            if (!myLandbot) {
+                var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+                s.addEventListener('load', function () {
+                    var myLandbot = new Landbot.Livechat({
+                        configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-1571288-MLVQNTWK283EAQWH/index.json',
+                    });
+                });
+                s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
+                var x = document.getElementsByTagName('script')[0];
+                x.parentNode.insertBefore(s, x);
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lemon | Ações</title>
+    <link rel="icon" href="./assets/img/menu/logo-small.png">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/acoes.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="headerAcoes">
+        <a class="headerAcoes_logo" href="./acoes.html"><img src="./assets/img/menu/logo-small.png"
+                alt="Logo Lemon"></a>
+        <div class="headerAcoes_opcoesMenu">
+            <a href="./acoes.html">
+                <div class="headerAcoes_opcoesMenu_div" id="acoes">
+                    <img src="./assets/img/menu/iconInicio.svg" alt="">
+                    <p>Ações</p>
+                </div>
+            </a>
+            <a href="./pontuacao.html">
+                <div class="headerAcoes_opcoesMenu_div" id="pontuacao">
+                    <img src="./assets/img/menu/iconPontuacao.svg" alt="">
+                    <p>Pontuação</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="headerAcoes_opcoesMenu_div" id="premios">
+                    <img src="./assets/img/menu/iconPremios.svg" alt="">
+                    <p>Prêmios</p>
+                </div>
+            </a>
+            <a href="./dicas.html">
+                <div class="headerAcoes_opcoesMenu_div" id="dicas">
+                    <img src="./assets/img/menu/iconDicas.svg" alt="">
+                    <p>Dicas</p>
+                </div>
+            </a>
+        </div>
+        <a class="headerAcoes_usuario" href="./login.html"><img src="./assets/img/menu/iconUser.svg" alt=""></a>
+    </header>
+
+    <!-- HEADING -->
+    <div class="heading">
+        <p>Olá, Bruna!</p>
+    </div>
+
+    <script type="text/javascript">
+        function abrir() {
+            document.getElementById('popup').style.display = "block";
+        }
+        function fechar() {
+            document.getElementById('popup').style.display = "none";
+        }
+    </script>
+
+    <!-- CONTAINER AÇÕES -->
+    <div class="containerDiv">
+        <div class="containerAcoes">
+            <p class="containerAcoes_title">Qual foi a sua ação </br> de hoje?</p>
+            <div class="containerAcoes_box1">
+                <a href="javascript: abrir();">
+                    <div class="containerAcoes_box">
+                        <img src="./assets/img/actions/iconPlanta.svg" alt="">
+                        <p class="containerAcoes_box_pontos">+10</p>
+                        <p class="containerAcoes_box_descricao">Cultivei horta doméstica</p>
+                    </div>
+                </a>
+                <a href="javascript: abrir();">
+                    <div class="containerAcoes_box">
+                        <img src="./assets/img/actions/iconRecycle.svg" alt="">
+                        <p class="containerAcoes_box_pontos">+20</p>
+                        <p class="containerAcoes_box_descricao">Separei lixo para reciclagem</p>
+                    </div>
+                </a>
+                <a href="javascript: abrir();">
+                    <div class="containerAcoes_box">
+                        <img src="./assets/img/actions/iconSalad.svg" alt="">
+                        <p class="containerAcoes_box_pontos">+15</p>
+                        <p class="containerAcoes_box_descricao">Tive bons hábitos alimentares</p>
+                    </div>
+                </a>
+            </div>
+            <div class="containerAcoes_box2">
+                <a href="javascript: abrir();">
+                    <div class="containerAcoes_box">
+                        <img src="./assets/img/actions/iconRun.svg" alt="">
+                        <p class="containerAcoes_box_pontos">+10</p>
+                        <p class="containerAcoes_box_descricao">Pratiquei atividades físicas</p>
+                    </div>
+                </a>
+                <a href="javascript: abrir();">
+                    <div class="containerAcoes_box">
+                        <img src="./assets/img/actions/iconHeart.svg" alt="">
+                        <p class="containerAcoes_box_pontos">+20</p>
+                        <p class="containerAcoes_box_descricao">Participei de projetos voluntários</p>
+                    </div>
+                </a>
+                <a href="javascript: abrir();">
+                    <div class="containerAcoes_box">
+                        <img src="./assets/img/actions/iconBus.svg" alt="">
+                        <p class="containerAcoes_box_pontos">+15</p>
+                        <p class="containerAcoes_box_descricao">Utilizei alternativas de transporte</p>
+                    </div>
+                </a>
+            </div>
+            <div class="popUp" id="popup">
+                <div class="titleComprovante">
+                    <h1>Adicione o comprovante </br> da sua ação</h1>
+                    <a href="javascript: fechar()">
+                        <img id="fechar" src="./assets/img/icons/iconFechar.svg" alt="">
+                    </a>
+                </div>
+                <div class="comprovante">
+                    <img src="./assets/img/icons/iconCamera.svg" alt="">
+                    <p>Tire uma foto</p>
+                </div>
+                <div class="comprovante">
+                    <img src="./assets/img/icons/iconVideo.svg" alt="">
+                    <p>Grave um vídeo</p>
+                </div>
+                <div class="comprovante">
+                    <img src="./assets/img/icons/iconBiblioteca.svg" alt="">
+                    <p>Procure na biblioteca</p>
+                </div>
+                <div class="comprovante" id="ultimaLinha">
+                    <img src="./assets/img/icons/iconAnexo.svg" alt="">
+                    <p>Anexe um documento</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- CHATBOT -->
+
+    <script>
+        window.addEventListener('mouseover', initLandbot, { once: true });
+        window.addEventListener('touchstart', initLandbot, { once: true });
+        var myLandbot;
+        function initLandbot() {
+            if (!myLandbot) {
+                var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+                s.addEventListener('load', function () {
+                    var myLandbot = new Landbot.Livechat({
+                        configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-1571288-MLVQNTWK283EAQWH/index.json',
+                    });
+                });
+                s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
+                var x = document.getElementsByTagName('script')[0];
+                x.parentNode.insertBefore(s, x);
+            }
+        }
+    </script>
+</body>
+
+</html>

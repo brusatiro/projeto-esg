@@ -1,0 +1,116 @@
+img {
+    width: 25px;
+}
+
+.headerAcoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 60px;
+}
+
+.headerAcoes_opcoesMenu {
+    display: flex;
+}
+
+.headerAcoes_logo img, .headerAcoes_usuario img {
+    width: 40px;
+}
+
+.headerAcoes_opcoesMenu_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.headerAcoes_opcoesMenu_div p {
+    font-size: 0.7rem;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+#dicas p {
+    color: #98FFAE;
+}
+
+/* CONTAINER */
+
+.heading h1 {
+    color: #ffffff;
+    text-align: center;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 30px 0 15px;
+}
+
+.containerDicas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerDicas_option {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 15px 7px;
+    background-color: #98FFAE;
+    padding: 15px 20px 15px 25px;
+    border-radius: 20px;
+    width: 280px;
+    height: 80px;
+}
+
+.containerDicas_option img {
+    margin-right: 20px;
+    width: 50px;
+}
+
+.containerDicas_option p {
+    color: #1E774C;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.containerDicas_option button {
+    background-color: #1e774ce5;
+    border: none;
+    border-radius: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: Poppins;
+    padding: 6px 10px;
+    margin-top: 12px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px #000000;
+    font-size: 0.7rem;
+}
+
+.containerDicas_option button:hover {
+    box-shadow: 3px 3px 5px #0d3d26;
+}
+
+.containerDicas_option button:active {
+    box-shadow: inset 2px 2px 2px #0d3d26;
+}
+
+.divLogo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#livup {
+    width: 30px;
+    padding: 10px 0px 0px 80px;
+}
+
+#gympass {
+    padding: 15px 0px 0px 60px;
+}

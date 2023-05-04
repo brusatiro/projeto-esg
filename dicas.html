@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lemon | Dicas</title>
+    <link rel="icon" href="./assets/img/menu/logo-small.png">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/dicas.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="headerAcoes">
+        <a class="headerAcoes_logo" href="./acoes.html"><img src="./assets/img/menu/logo-small.png"
+                alt="Logo Lemon"></a>
+        <div class="headerAcoes_opcoesMenu">
+            <a href="./acoes.html">
+                <div class="headerAcoes_opcoesMenu_div" id="acoes">
+                    <img src="./assets/img/menu/iconInicioWhite.svg" alt="">
+                    <p>Ações</p>
+                </div>
+            </a>
+            <a href="./pontuacao.html">
+                <div class="headerAcoes_opcoesMenu_div" id="pontuacao">
+                    <img src="./assets/img/menu/iconPontuacao.svg" alt="">
+                    <p>Pontuação</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="headerAcoes_opcoesMenu_div" id="premios">
+                    <img src="./assets/img/menu/iconPremios.svg" alt="">
+                    <p>Prêmios</p>
+                </div>
+            </a>
+            <a href="./dicas.html">
+                <div class="headerAcoes_opcoesMenu_div" id="dicas">
+                    <img src="./assets/img/menu/iconDicasGreen.svg" alt="">
+                    <p>Dicas</p>
+                </div>
+            </a>
+        </div>
+        <a class="headerAcoes_usuario" href="./login.html"><img src="./assets/img/menu/iconUser.svg" alt=""></a>
+    </header>
+
+    <div class="heading">
+        <h1>Veja algumas dicas para você </br> completar suas ações:</h1>
+    </div>
+
+    <div class="containerDicas">
+        <div class="containerDicas_left">
+            <div class="containerDicas_option">
+                <img src="./assets/img/actions/iconPlanta.svg" alt="">
+                <div>
+                    <p>Dicas de cultivo</p>
+                    <button>Explorar</button>
+                </div>
+            </div>
+            <div class="containerDicas_option">
+                <img src="./assets/img/actions/iconRun.svg" alt="">
+                <div>
+                    <p>Exercícios Diários</p>
+                    <button>Explorar</button>
+                </div>
+            </div>
+            <div class="containerDicas_option">
+                <img src="./assets/img/actions/iconRecycle.svg" alt="">
+                <div>
+                    <p>Dicas Sustentáveis</p>
+                    <button>Explorar</button>
+                </div>
+            </div>
+        </div>
+        <div class="containerDicas_right">
+            <div class="containerDicas_option">
+                <img src="./assets/img/actions/iconRecycle.svg" alt="">
+                <div>
+                    <p>Ecopontos</p>
+                    <a href="./ecopontos.html"><button>Explorar</button></a>
+                </div>
+            </div>
+            <div class="containerDicas_option">
+                <img src="./assets/img/actions/iconHeart.svg" alt="">
+                <div>
+                    <p>ONGs e Projetos</p>
+                    <button>Explorar</button>
+                </div>
+            </div>
+            <div class="containerDicas_option">
+                <img src="./assets/img/actions/iconSalad.svg" alt="">
+                <div>
+                    <p>Parceria LivUp</p>
+                    <div class="divLogo">
+                        <button>Explorar</button>
+                        <img id="livup" src="./assets/img/logo/logoLivUp.svg" alt="Logo da empresa LivUp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="containerDicas_right">
+            <div class="containerDicas_option">
+                <img src="./assets/img/actions/iconSalad.svg" alt="">
+                <div>
+                    <p>Receitas fit</p>
+                    <button>Explorar</button>
+                </div>
+            </div>
+            <div class="containerDicas_option">
+                <img src="./assets/img/actions/iconBus.svg" alt="">
+                <div>
+                    <p>Dicas Alternativas</p>
+                    <button>Explorar</button>
+                </div>
+            </div>
+            <div class="containerDicas_option">
+                <img src="./assets/img/actions/iconRun.svg" alt="">
+                <div>
+                    <p>Parceria Gympass</p>
+                    <div class="divLogo">
+                        <button>Explorar</button>
+                        <img id="gympass" src="./assets/img/logo/logoGympass.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- CHATBOT -->
+
+    <script>
+        window.addEventListener('mouseover', initLandbot, { once: true });
+        window.addEventListener('touchstart', initLandbot, { once: true });
+        var myLandbot;
+        function initLandbot() {
+            if (!myLandbot) {
+                var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+                s.addEventListener('load', function () {
+                    var myLandbot = new Landbot.Livechat({
+                        configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-1571288-MLVQNTWK283EAQWH/index.json',
+                    });
+                });
+                s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
+                var x = document.getElementsByTagName('script')[0];
+                x.parentNode.insertBefore(s, x);
+            }
+        }
+    </script>
+</body>
+
+</html>

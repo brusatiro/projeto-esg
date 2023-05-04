@@ -1,0 +1,79 @@
+.body {
+    height: 100%;
+}
+
+.container {
+    text-align: center;
+}
+
+.container_heading,
+.footerHome {
+    color: #ffffff;
+}
+
+.container_heading_one {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.container_heading_two {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.container_options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_options_colab,
+.container_options_admin {
+    background-color: #ffffff;
+    color: #1E774C;
+    margin: 0 1.5rem;
+    padding: 15px 25px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.6);
+    width: 6.5rem;
+    cursor: pointer;
+}
+
+.container_options_colab:hover,
+.container_options_admin:hover {
+    box-shadow: 4px 4px 5px rgba(4, 70, 48, 0.6);
+}
+
+.container_options_colab:active,
+.container_options_admin:active {
+    box-shadow: inset 5px 5px 4px rgba(9, 100, 70, 0.6);
+}
+
+.container_options_text {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 0.9rem;
+}
+
+.footerHome {
+    margin-top: 4rem;
+}
+
+.footerHome_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerHome_text p {
+    font-size: 0.8rem;
+    padding: 0 20px;
+}
+
+.footerHome_copy {
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 1rem;
+}
