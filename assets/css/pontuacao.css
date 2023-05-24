@@ -13,7 +13,8 @@ img {
     display: flex;
 }
 
-.headerPontuacao_logo img, .headerPontuacao_usuario img {
+.headerPontuacao_logo img,
+.headerPontuacao_usuario img {
     width: 40px;
 }
 
@@ -43,6 +44,8 @@ img {
     font-weight: 500;
     margin: 25px 0;
 }
+
+
 /* CONTAINER */
 
 .containerDiv {
@@ -61,9 +64,10 @@ img {
     color: #ffffff;
     background-color: #26C076;
     border-radius: 12px;
-    width: 140px;
-    margin-left: 45px;
     padding: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .containerRanking {
@@ -72,7 +76,6 @@ img {
     padding: 20px 25px 5px;
     width: 20%;
     border-radius: 20px;
-    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -84,7 +87,7 @@ img {
     align-items: center;
     justify-content: space-between;
     padding: 10px 0;
-    border-bottom: #1e774c44 solid 1px ;
+    border-bottom: #1e774c44 solid 1px;
 }
 
 .iconRanking {
@@ -127,7 +130,7 @@ img {
     flex-direction: column;
     justify-content: center;
     align-self: flex-start;
-    /* margin-left: 80px; */
+    margin-left: 15px;
     width: 70%;
 }
 
@@ -226,3 +229,317 @@ img {
     font-weight: 700;
 }
 
+/* RESPONSIVIDADE */
+
+@media (max-width: 1000px) {
+
+    .containerDiv {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 30px;
+    }
+
+    .titleRanking {
+        font-size: 1rem;
+    }
+
+    .containerRanking {
+        padding: 20px 20px 5px;
+        width: 23%;
+    }
+
+    .titlePontos {
+        font-size: 1.5rem;
+        margin: 0 250px;
+        margin-top: -20px;
+    }
+
+    .linhaPontos {
+        font-size: 1rem;
+    }
+
+    .linhaRight img {
+        margin: 0 8px;
+    }
+
+    .pontos {
+        font-size: 1.2rem;
+        padding: 8px;
+    }
+
+    .quantPontos h2 {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .headerPontuacao {
+        margin: 20px 30px;
+    }
+
+    .containerDiv {
+        padding: 20px 30px;
+    }
+
+    .containerRanking {
+        padding: 20px 20px 5px;
+        width: 25%;
+    }
+
+    .containerPontos {
+        width: 65%;
+    }
+
+    .titlePontos {
+        font-size: 1.4rem;
+        width: 35%;
+        margin: 0 150px;
+        margin-top: -20px;
+    }
+
+    .linhaLeft img {
+        margin-right: 20px;
+    }
+
+    .acao {
+        margin-right: 50px;
+    }
+
+    .linhaRight {
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
+
+    .linhaRight img {
+        width: 15px;
+        margin: 0 10px;
+    }
+
+    .pontos {
+        font-size: 1.2rem;
+        padding: 8px;
+    }
+
+    .quantPontos h2 {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .headerPontuacao {
+        margin: 20px;
+    }
+
+    .containerDiv {
+        padding: 20px;
+    }
+
+    .titleRanking {
+        font-size: 1rem;
+    }
+
+    .containerRanking {
+        background-color: #98FFAE;
+        color: #1E774C;
+        padding: 20px 15px 5px;
+        width: 25%;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: -8px;
+    }
+
+    .positionRanking {
+        padding: 8px 0;
+    }
+
+    .iconRanking {
+        width: 25px;
+    }
+
+    .medalRanking {
+        width: 15px;
+    }
+
+
+    .nameRanking h2 {
+        font-size: 0.7rem;
+    }
+
+    .nameRanking p {
+        font-size: 0.6rem;
+        margin-top: 4px;
+    }
+
+    .containerPontos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: flex-start;
+        margin-left: 15px;
+        width: 70%;
+    }
+
+    .titlePontos {
+        font-size: 1.3rem;
+        margin: 0 120px;
+        width: 35%;
+        padding: 8px 5px;
+        margin-top: -15px;
+    }
+
+    .linhaPontos {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1rem;
+        padding: 10px 0;
+    }
+
+    .linhaLeft img {
+        margin-right: 20px;
+    }
+
+    .acao {
+        margin-right: 40px;
+        font-weight: 400;
+    }
+
+
+    .linhaRight img {
+        width: 14px;
+        margin: 0 10px;
+    }
+
+    .pontos {
+        font-size: 1rem;
+        padding: 8px;
+        margin-right: 10px;
+    }
+
+    .quantPontos h2 {
+        font-size: 1.2rem;
+    }
+
+    #meusPontos {
+        padding: 1px 7px;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    .headerPontuacao {
+        margin: 20px 10px;
+    }
+
+    .headerPontuacao_logo img,
+    .headerPontuacao_usuario img {
+        width: 35px;
+    }
+
+    .headerPontuacao_opcoesMenu_div {
+        margin: 0 8px;
+    }
+
+    img {
+        width: 22px;
+    }
+
+    .containerDiv {
+        padding: 10px;
+    }
+
+    .titleRanking {
+        font-size: 0.9rem;
+    }
+
+    .containerRanking {
+        padding: 20px 5px 5px;
+        width: 30%;
+        margin-top: 10px;
+    }
+
+    .positionRanking {
+        padding: 8px;
+    }
+
+    .iconRanking {
+        width: 20px;
+    }
+
+    .medalRanking {
+        width: 15px;
+    }
+
+    .nameRanking h2 {
+        font-size: 0.6rem;
+    }
+
+    .nameRanking p {
+        font-size: 0.5rem;
+        margin-top: 4px;
+    }
+
+    .containerPontos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: flex-start;
+        margin-left: 10px;
+        /* width: 50%; */
+    }
+
+    .titlePontos {
+        font-size: 1rem;
+        margin: 0 100px;
+        /* width: 50%; */
+        border-radius: 10px;
+        padding: 7px 5px;
+        margin-top: -15px;
+    }
+
+    .linhaPontos {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.7rem;
+        padding: 15px 0;
+    }
+
+    .linhaLeft img {
+        width: 20px;
+        margin-right: 10px;
+    }
+
+    .acao {
+        margin-right: 5px;
+    }
+
+    .linhaRight img {
+        width: 10px;
+        margin: 5px;
+    }
+
+    .pontos {
+        font-size: 0.7rem;
+        padding: 6px;
+        border-radius: 8px;
+        font-weight: 800;
+        margin-right: 10px;
+    }
+
+    .quantPontos h2 {
+        font-size: 1rem;
+    }
+
+    #meusPontos {
+        padding: 1px 7px;
+    }
+
+}

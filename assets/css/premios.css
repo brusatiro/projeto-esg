@@ -1,0 +1,339 @@
+img {
+    width: 25px;
+}
+
+.headerPremios {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 60px 10px;
+}
+
+.headerPremios_opcoesMenu {
+    display: flex;
+}
+
+.headerPremios_logo img,
+.headerPremios_usuario img {
+    width: 40px;
+}
+
+.headerPremios_opcoesMenu_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.headerPremios_opcoesMenu_div p {
+    font-size: 0.7rem;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+#premios p {
+    color: #98FFAE;
+}
+
+
+/* CONTAINER */
+
+.containerDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 250px;
+}
+
+.titlePremios {
+    font-size: 1.8rem;
+    color: #ffffff;
+    font-weight: 600;
+    margin: 0px 0px 10px;
+}
+
+.containerPremios {
+    background-image: url(../img/background/backgroundPremios.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position-y: center;
+    background-position-x: center;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #136940;
+    padding: 15px 100px 20px;
+}
+
+.parabens,
+.top3,
+.nome,
+.pontos {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.nome {
+    margin-top: 25px;
+    font-size: 1.45rem;
+}
+
+.pontos {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.iconMedalha {
+    margin-top: 10px;
+    width: 35px;
+}
+
+.opcoesPremios {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.divPremios {
+    display: flex;
+    margin: 0;
+}
+
+.blocoPremio {
+    display: flex;
+    flex-direction: column;
+    background-color: #98FFAE;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 20px;
+    margin: 20px 10px 0px;
+    min-width: 180px;
+}
+
+#gympass {
+    width: 35%;
+}
+
+#vr {
+    width: 25%;
+}
+
+#livup {
+    width: 20%;
+}
+
+.blocoPremio p {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin: 12px 0;
+}
+
+.blocoPremio button {
+    background-color: #1E774C;
+    color: #ffffff;
+    border-radius: 8px;
+    border: none;
+    font-size: 0.7rem;
+    letter-spacing: 0.5px;
+    font-family: 'Poppins';
+    padding: 3px 10px;
+    box-shadow: 1px 1px 5px #000000;
+}
+
+.blocoPremio button:hover {
+    box-shadow: 3px 3px 5px #0d3d26;
+    cursor: pointer;
+}
+
+.compartilhe {
+    margin: 20px 0 6px;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.redesSociais {
+    display: flex;
+}
+
+.redesSociais img {
+    padding: 0 3px;
+    width: 20px;
+}
+
+.redesSociais img:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .headerPremios {
+        margin: 20px;
+    }
+
+    .headerPremios_logo img,
+    .headerPremios_usuario img {
+        width: 40px;
+    }
+
+    .headerPremios_opcoesMenu_div {
+        margin: 0 12px;
+    }
+
+    .containerDiv {
+        padding: 10px;
+    }
+
+    .titlePremios {
+        font-size: 1.6rem;
+        color: #ffffff;
+        font-weight: 600;
+        margin: 0px 0px 20px;
+    }
+
+    .containerPremios {
+        padding: 25px 0px;
+        width: 92%;
+    }
+
+    .parabens,
+    .top3,
+    .nome,
+    .pontos {
+        font-size: 1.4rem;
+        margin-top: 0px;
+    }
+
+    .nome {
+        margin-top: 15px;
+        font-size: 1.2rem;
+    }
+
+    .pontos {
+        font-size: 1rem;
+        margin-top: 5px;
+    }
+
+    .iconMedalha {
+        margin-top: 10px;
+        width: 30px;
+    }
+
+    .blocoPremio {
+        padding: 15px;
+        border-radius: 20px;
+        margin: 20px 10px 0px;
+    }
+
+    .blocoPremio p {
+        font-size: 0.75rem;
+        font-weight: 600;
+        margin: 12px 0;
+    }
+}
+
+@media (max-width: 660px) {
+    .blocoPremio {
+        min-width: 140px;
+    }
+}
+
+@media (max-width: 500px) {
+    .headerPremios {
+        margin: 20px;
+    }
+
+    .headerPremios_logo img,
+    .headerPremios_usuario img {
+        width: 35px;
+    }
+
+    .headerPremios_opcoesMenu_div {
+        margin: 0 7px;
+    }
+
+    img {
+        width: 22px;
+    }
+
+    .titlePremios {
+        font-size: 1.5rem;
+    }
+
+    .containerPremios {
+        border-radius: 0px;
+        padding: 0;
+        width: 92%;
+        margin-top: -40px;
+        height: 110vh;
+    }
+
+    .parabens,
+    .top3,
+    .nome,
+    .pontos {
+        font-size: 1.3rem;
+        margin-top: 0px;
+    }
+
+    .parabens {
+        margin-top: 60px;
+    }
+
+    .nome {
+        margin-top: 15px;
+        font-size: 1.1rem;
+    }
+
+    .pontos {
+        font-size: 1rem;
+        margin-top: 5px;
+    }
+
+    .iconMedalha {
+        margin-top: 10px;
+        width: 30px;
+    }
+
+    .opcoesPremios {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+
+    .blocoPremio {
+        padding: 10px;
+        border-radius: 20px;
+        margin: 5px;
+        min-width: 100px;
+    }
+
+    .blocoPremio p {
+        font-size: 0.75rem;
+        font-weight: 600;
+        margin: 12px 0;
+    }
+
+    .divPremios {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .compartilhe {
+        margin-top: 5px;
+        font-size: 0.8rem;
+    }
+
+    .redesSociais img {
+        width: 15px;
+        margin: 0px;
+    }
+
+
+}

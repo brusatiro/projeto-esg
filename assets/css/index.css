@@ -77,3 +77,30 @@
     text-align: center;
     margin-top: 1rem;
 }
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 500px) {
+    .container_heading_one {
+        font-size: 2.8rem;
+    }
+    
+    .container_heading_two {
+        font-size: 1.1rem;
+    }
+
+    .container_options_text {
+        font-size: 0.8rem;
+    }
+
+    .container_options_colab img,
+    .container_options_admin img {
+        width: 45px;
+    }
+
+    .container_options_colab,
+    .container_options_admin {
+        margin: 0 1.5rem;
+        padding: 10px 15px;
+    }
+}

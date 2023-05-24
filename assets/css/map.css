@@ -13,7 +13,8 @@ img {
     display: flex;
 }
 
-.headerAcoes_logo img, .headerAcoes_usuario img {
+.headerAcoes_logo img,
+.headerAcoes_usuario img {
     width: 40px;
 }
 
@@ -46,14 +47,14 @@ img {
 
 #map {
     height: 65vh;
-    margin: 20px 200px;
+    margin: 20px 180px;
     border: #98FFAE solid 10px;
     border-radius: 20px;
 }
 
 .backButton {
     margin-left: 60px;
-    margin-top: -30px;
+    margin-top: -20px;
 }
 
 .backButton img {
@@ -62,4 +63,64 @@ img {
 
 .backButton img:hover {
     cursor: pointer;
+}
+
+@media (max-width: 850px) {
+    #map {
+        height: 65vh;
+        margin: 20px 80px;
+        border: #98FFAE solid 10px;
+        border-radius: 20px;
+    }
+
+    .backButton {
+        margin-left: 60px;
+        margin-top: -10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .heading {
+        font-size: 1.7rem;
+        margin: 40px 0 30px;
+    }
+
+    .headerAcoes_opcoesMenu_div {
+        margin: 0 8px;
+    }
+    .headerAcoes {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 20px;
+    }
+
+    .headerAcoes_logo img,
+    .headerAcoes_usuario img {
+        width: 35px;
+    }
+
+    img {
+        width: 22px;
+    }
+
+    .heading {
+        text-align: center;
+        color: #ffffff;
+        font-size: 1.3rem;
+        font-weight: 500;
+        margin: 25px 0;
+    }
+
+    #map {
+        height: 65vh;
+        margin: 20px 40px;
+        border: #98FFAE solid 10px;
+        border-radius: 20px;
+    }
+
+    .backButton {
+        margin-left: 20px;
+        margin-top: 0px;
+    }
 }
